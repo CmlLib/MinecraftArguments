@@ -1,5 +1,7 @@
 # MinecraftArguments
 
-Minecraft Java Edition
+Extract Minecraft: Java Edition game arguments.
 
-Game arguments
+put decompiled `net.minecraft.client.main` to `decompiles/<version_name>.java`.
+
+run `python arguments_extractor.py all`

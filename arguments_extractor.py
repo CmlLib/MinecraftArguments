@@ -5,6 +5,11 @@ import sys
 decompilesPath = os.path.abspath("decompiles")
 generatedPath = os.path.abspath("generated")
 
+if not os.path.isdir(decompilesPath):
+    os.makedirs(decompilesPath)
+if not os.path.isdir(generatedPath):
+    os.makedirs(generatedPath)
+
 def extractOptionsToMarkdown(name: str):
     source = os.path.join(decompilesPath, name + ".java")
     destination = os.path.join(generatedPath, name + ".md")
